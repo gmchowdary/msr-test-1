@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  msr-test-container-apache2:
+    build: /root/msr-test-instance
+    ports:
+      - '80:80'
+      - '2222:22'
+#     networks:
+#       connexion-vpc:
+#         ipv4_address: 9.9.1.1
+#     tty: true
+#     stdin_open: true
+
+# networks:
+#   connexion-vpc:
+#     driver: bridge
+#     ipam:
+#      config:
+#        - subnet: 9.9.0.0/16
+#          gateway: 9.9.0.1

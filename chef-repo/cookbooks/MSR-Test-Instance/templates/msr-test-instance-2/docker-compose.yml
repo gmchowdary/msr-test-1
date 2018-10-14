@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  msr-test-container-couchDB:
+    image: couchdb
+    ports:
+      - '5984:5984'
+      - '2222:22'
+#     networks:
+#       connexion-vpc:
+#         ipv4_address: 9.9.1.1
+
+# networks:
+#   connexion-vpc:
+#     driver: bridge
+#     ipam:
+#      config:
+#        - subnet: 9.9.0.0/16
+#          gateway: 9.9.0.1
